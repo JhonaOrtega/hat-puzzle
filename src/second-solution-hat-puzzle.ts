@@ -1,5 +1,4 @@
 // final second solution
-
 export function secondHatPuzzleSolution(selectedHats: String[]): boolean[] {
     let guesses: boolean[] = [true, true, true];
 

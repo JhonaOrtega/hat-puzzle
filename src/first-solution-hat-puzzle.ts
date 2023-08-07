@@ -1,12 +1,12 @@
 import { availableHats } from ".";
 
 export function computePersonsQueue(hatNumbers: number): string[] {
+    const selectedHats: string[] = [];
+    const copyAvailableHats = availableHats.slice();
+
     if (hatNumbers > availableHats.length) {
         throw new Error("The number of participants exceed the number of hats available");
     }
-
-    const selectedHats: string[] = [];
-    const copyAvailableHats = availableHats.slice();
     for (let index = 0; index < hatNumbers; index++) {
         const randomIndex = Math.floor(Math.random() * copyAvailableHats.length);
         const value = copyAvailableHats.splice(randomIndex, 1)[0];
