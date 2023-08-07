@@ -35,8 +35,7 @@ export function firstHatPuzzleSolution(line: string[]): boolean[] {
     return responseBoolean;
 }
 
-
-// Realize the pattern of the solution created previously
+// First code that I came up with, I wrote the possible responses (false or true) that the array of person could have.
 
 // True responses
 // last position: if it sees 2 Y
@@ -47,4 +46,6 @@ export function firstHatPuzzleSolution(line: string[]): boolean[] {
 // False responses
 // last position: if it doesnt see 2 Y
 // mid position  if last position is false and it doesnt see a Y
-// first position: no posible false response combination 
+// first position: no posible false response combination
+
+// After seein this I decided to create a second solution using the false responses as the conditional trying to simplify the code, which is the code in src/second-solution-hat-puzzle.ts

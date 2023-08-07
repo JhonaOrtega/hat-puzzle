@@ -1,4 +1,5 @@
-// final second solution
+// final second solution that I came up with focusing only in false responses and trying to do it as generic as possible
+
 export function secondHatPuzzleSolution(selectedHats: String[]): boolean[] {
     let guesses: boolean[] = [true, true, true];
 

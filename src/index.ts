@@ -8,7 +8,6 @@ function main(): void {
   let guesses1;
   let guesses2;
 
-
   try {
     selectedHats = computePersonsQueue(3);
     guesses1 = firstHatPuzzleSolution(selectedHats);
